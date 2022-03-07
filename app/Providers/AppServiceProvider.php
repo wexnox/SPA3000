@@ -16,9 +16,9 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        // $categoryList = Category::get();
+        $categoryList = Category::get();
 
-        // view()->share('categoryList', $categoryList);
+        view()->share('categoryList', $categoryList);
 
         Paginator::useBootstrap();
     }
